@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    </head>
+<body>
+
+
+    <form>
+        <header>MOCK SITE BUILDER</header>
+        <label>Image Url <span>*</span></label>
+        <input id="img_url"/>
+        <!-- <div class="help"></div> -->
+        <label>Bot script <span>*</span></label>
+        <br>
+        <textarea name="" id="bot_script" cols="30" rows="10"></textarea><br>
+        <!-- <div class="help">Use upper and lowercase lettes as well</div> -->
+        <h1 id='submit'>CHILL BRO</h1>
+    </form>
+    <div id="jsScript">
+        <!-- <script type="text/javascript">
+            window.ymConfig = { bot: 'x1597822522358' }; 
+            (function () { 
+                var w = window, ic = w.YellowMessenger; 
+                if ("function" === typeof ic) 
+                    ic("reattach_activator"), 
+                    ic("update", ymConfig); 
+                else { 
+                    var d = document, 
+                    i = function () { 
+                        i.c(arguments) 
+                    }; 
+                    function l() { 
+                        var e = d.createElement("script"); 
+                        e.type = "text/javascript", 
+                        e.async = !0, 
+                        e.src = "https://app.yellowmessenger.com/widget/main.js"; 
+                        var t = d.getElementsByTagName("script")[0]; 
+                        t.parentNode.insertBefore(e, t) 
+                    } 
+                    i.q = [], 
+                    i.c = function (e) { 
+                        i.q.push(e)
+                    }, 
+                    w.YellowMessenger = i, 
+                    w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1) 
+                } 
+            })();
+        </script> -->
+    </div>
+    
+    <script>
+        $("h1").click(function(){  
+            let img_url = $("#img_url").val()
+            let bot_script = $("#bot_script").val()
+            if (img_url!="" && bot_script!="") {
+                localStorage.setItem("img_url",img_url)
+                localStorage.setItem("script",bot_script)
+                document.location.href="index2.html"
+            }
+        });  
+    </script>
+
+</body>
+
+</html>
