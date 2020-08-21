@@ -7,7 +7,12 @@ html, body {
   
   body {
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    background: tomato;
+    /* background: rgb(141, 88, 78); */
+    /* background-image: linear-gradient(to right, #AA076B 0%, #61045F 51%, #AA076B 100%); */
+    background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     /* background-image: url('https://cdn.yellowmessenger.com/m4tsMgxXTK641597993258551.png'); */
     background-size: cover;
     background-position: center;
@@ -27,9 +32,13 @@ html, body {
     border-radius: 10px;
   }
   form header {
-    background: #FF3838;
+    /* background: #c00698; */
+    background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     padding: 30px 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1.2em;
     font-weight: 600;
     border-radius: 10px 10px 0 0;
@@ -73,18 +82,20 @@ html, body {
     font-size: 0.8em;
     color: #777;
   }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
   form h1 {
-      font-family: 'Roboto', sans-serif;
     width: fit-content;
     position: relative;
     margin-top: 30px;
     margin-bottom: 30px;
     left: 50%;
     transform: translate(-50%, 0);
-    font-family: inherit;
-    color: white;
-    background: #FF3838;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(43, 40, 40);
+    /* background: #FF3838; */
+    background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     outline: none;
     border: none;
     padding: 5px 15px;
@@ -96,6 +107,7 @@ html, body {
     transition: all 0.15s ease-in-out;
   }
   form h1:hover {
-    background: #ff5252;
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   color: rgb(4, 57, 138);
   }
   
